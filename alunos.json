@@ -1,0 +1,45 @@
+[
+{
+    "nome": "Fabio",
+    "nota": 8.5,
+    "curso": "QA"
+},
+{
+    "nome": "Alice",
+    "nota": 9.0,
+    "curso": "SQL"
+},
+{   
+    "nome": "Alan",
+    "cargo": "Professor",
+    "curso": "Dev"                                                      
+},
+{
+    "nome": "Mariana",
+    "cargo": "Professora",
+    "curso": ["Dev", "FE", "MongoDB"]
+},
+{
+    "nome": "João",
+    "nota": 9,
+    "curso": "QA"
+},
+{
+    "nome": "Paulo",
+    "nota": 5,
+    "curso": "DEV"
+},
+{
+    "nome": "Maria", 
+    "nota": 8,
+    "curso": "QA"
+},
+{
+    "nome": "JL",              
+    "nota": 9.5,
+    "curso": "SQL"},
+{
+    "nome": "Fausto",     
+    "nota": 6,
+    "curso": "FE"}
+    ]
