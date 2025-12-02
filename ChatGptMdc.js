@@ -72,3 +72,8 @@ let z = 10
 let divisor3 = 3
 temp4 = z % divisor3
 console.log(temp4)
+
+
+if (Number.isInteger(10/5)) {
+    console.log("YES")
+}

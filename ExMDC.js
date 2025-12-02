@@ -1,18 +1,6 @@
-      //Cálculo do Máximo Divisor Comum (MDC) usando o Algoritmo de Euclides
-//let a = 12, b = 18
-                                            //console.log("Valores iniciais: a: " + a + ", b: " + b);
-//while (b !== 0) {   
- //   let temp = b;
-                                            //console.log("Valor de temp: " + temp);
-   // b = a % b;
-                                            //console.log("Novo valor de b (a % b): " + b);
-    //a = temp;
-                                            //console.log("Novo valor de a (temp): " + a);
-//}console.log("MDC é: " + a);
-
-        //Testando o algoritmo MDC passo a passo
+//1º Solução
 //let x = 12, y = 18
-//x = x /2
+//x = x/2
 //console.log("X = :" + x)
 //y = y/2
 //console.log("Y = :" + y)
@@ -28,52 +16,147 @@
 //console.log("MDC = " + MDC)
 
 
-//Tentativa MDC
-let b = 2, c = 3, d = 4, e = 5, f = 6, g = 7, h = 8, i = 9, j = 10, k = 11, l = 12, m = 13, n = 14, o = 15, p = 16, q = 17, r = 18, temp1;
-temp = l                                                    //1º MDC
-temp2 = b                                                   //divisor - começa com b(2)
-l = (l/temp2)  
-                                                            //1º cálculo de L
-if (Number.isInteger(l)) {
-      console.log("1º Valor de L se inteiro " + l);
-     (temp/temp2);
-     (temp = l);
-     console.log("1º Valor de temp ajustado :" + temp);       //1º Valor final ajustado de temp
+//2º Solução
+let a = 12, c = 2;
+                        //A
+      //1
+if (Number.isInteger(a/2)) {
+    console.log("1. A é divisível por " + c);
+    a = a/ c;
+    console.log("1. A é igual : " + a)
+}else {
+      c++;
+}
+    if (a ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("1º: continua " + "a = "+ a + " "+ "c = " + c);
+    } 
 
-      if(Number.isInteger(temp)) {
-          l=  (temp/temp2);
-          console.log("2º Valor de L se inteiro " + temp);
-          (l/temp2);
-          console.log("2º Valor de temp ajustado :" + l);   //2º Valor final ajustado de temp
-      }
-
-      if(Number.isInteger(temp)) {
-            l=  (temp/temp2);
-          console.log("3º Valor de L se inteiro " + temp);
-          (l/temp2);
-          console.log("3º Valor de temp ajustado :" + l);   //2º Valor final ajustado de temp
-      }
-
-
-
-
-} else {
-    console.log(temp*temp2);
-    console.log("Valor de L não inteiro " + l);
-    console.log("valor final temp :" + temp);
-l = temp
-      console.log("Valor de L ajustado :" + l);
-
+      //2
+if(Number.isInteger(a/c))     {
+console.log("2. A é divisível por " + c);
+a = a /c
+console.log("2. A é igual : " + a)
+console.log("2. C é igual : " + c)
+}else {
+      c++;
+}
+if (a ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("2º: continua " + "a = "+ a + " "+ "c = " + c);
 }
 
+      //3
+if(Number.isInteger(a/c))     {
+console.log("3. A é divisível por " + c);
+a = a /c
+console.log("3. A é igual : " + a)
+console.log("3. C é igual : " + c)
+}else {
+      c++;                                                  //Auemnta C
+}
+if (a ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("3º: continua " + "a = "+ a + " "+ "c = " + c);
+}
+
+      //4
+if(Number.isInteger(a/c))     {
+console.log("4. A é divisível por " + c);
+a = a /c
+console.log("4. A é igual : " + a)
+console.log("4. C é igual : " + c)
+}else {
+      c++;
+}
+if (a ==1){
+      console.log("FINAL.ACABOU");
+    }else {
+      console.log("4º: continua " + "a = "+ a + " "+ "c = " + c);
+    }
+
+                        //FIM A
+
+let b = 18, d = 2;
+                        //B
+      //1
+if (Number.isInteger(b/d)) {
+    console.log("1. B é divisível por " + d);
+    b = b/ d;
+    console.log("1. B é igual : " + b);
+    console.log("2. D é igual : " + d)
+}else {
+      d++;
+}
+    if (b ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("1º: continua " + "b = "+ b + " "+ "d = " + d);
+    } 
+
+      //2
+if(Number.isInteger(b/d))     {
+console.log("2. B é divisível por " + d);
+b = b/ d;
+console.log("2. A é igual : " + b)
+console.log("2. C é igual : " + d)
+}else {
+      d++;
+}
+if (b ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("2º: continua " + "b = "+ b + " "+ "d = " + d);
+}
+
+      //3
+if(Number.isInteger(b/d))     {
+console.log("3. B é divisível por " + d);
+b = b/ d;
+console.log("3. B é igual : " + b)
+console.log("3. D é igual : " + d)
+}else {
+      c++;                                                  //Auemnta C
+}
+if (b ==1){
+      console.log("ACABOU");
+    }else {
+      console.log("3º: continua " + "b = "+ b + " "+ "d = " + d);
+}
+
+      //4
+if(Number.isInteger(b/d))     {
+console.log("4. B é divisível por " + d);
+b = b /d
+console.log("4. B é igual : " + b)
+console.log("4. D é igual : " + d)
+}else {
+      d++;
+}
+if (b ==1){
+      console.log("FINAL.ACABOU");
+    }else {
+      console.log("4º: continua " + "b = "+ b + " "+ "d = " + d);
+    }
+
+MDC = 3*2
+console.log("MDC é igual = " + MDC )
 
 
 
+//const resultado = 10 / 3;
 
-
-//const resultado3 = 15 / 3;
-
-//if (Number.isInteger(resultado3)) {
-//    console.log("É inteiro");
+//if (Number.isInteger(resultado)) {
+  //  console.log("É inteiro");
 //} else {
-//    console.log("Não é inteiro");
+  //  console.log("Não é inteiro");
+//}
+
+
+
+
+
+
