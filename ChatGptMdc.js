@@ -6,9 +6,10 @@ let mdc = 1;
 
 while (divisor1 <= a && divisor1 <= b) {
     if (a % divisor1 === 0 && b % divisor1 === 0) {
-        mdc = divisor1; // guarda o maior divisor comum encontrado
+        mdc = divisor1;                             // guarda o maior divisor comum encontrado
     }
     divisor1++;
+    //console.log(divisor1)
 }
 console.log("MDC1 é:", mdc);
 //Como funciona?
@@ -33,11 +34,11 @@ let mdc2 = 1;
 
 while (c >= divisor2 && b >= divisor2) {
     if (c % divisor2 === 0 && d % divisor2 === 0) {
-        mdc2 *= divisor2;  // acumula o divisor no MDC
+        mdc2 *= divisor2;                // acumula o divisor no MDC
         c /= divisor2;
         d /= divisor2;
     } else {
-        divisor2++; // tenta o próximo divisor
+        divisor2++;                     // tenta o próximo divisor
     }
 }
 
@@ -65,3 +66,9 @@ console.log("MDC2 é:", mdc2);
 //mdc = 2 × 3 = 6
 //Agora nenhum divisor comum maior existe → terminou.
 //Resultado = 6.
+
+
+let z = 10
+let divisor3 = 3
+temp4 = z % divisor3
+console.log(temp4)
