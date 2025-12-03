@@ -1,22 +1,22 @@
-//1º Solução
-//let x = 12, y = 18
-//x = x/2
-//console.log("X = :" + x)
-//y = y/2
-//console.log("Y = :" + y)
-//x = x /3
-//console.log("X = :" + x)
-//y = y /3
-//console.log("Y = :" + y)
-//x = x/2
-//console.log("X = "  + x)
-//y = y/3
-//console.log("Y = :" + y)
-//MDC = 2 * 3 
-//console.log("MDC = " + MDC)
+                              //1º Solução
+let x = 12, y = 18
+x = x/2
+console.log("X = :" + x)
+y = y/2
+console.log("Y = :" + y)
+x = x /3
+console.log("X = :" + x)
+y = y /3
+console.log("Y = :" + y)
+x = x/2
+console.log("X = "  + x)
+y = y/3
+console.log("Y = :" + y)
+MDC = 2 * 3 
+console.log("MDC = " + MDC)
 
 
-//2º Solução
+                              //2º Solução
 let a = 12, c = 2;
                         //A
       //1
@@ -79,10 +79,9 @@ if (a ==1){
     }
 
                         //FIM A
-
-let b = 18, d = 2;
                         //B
-      //1
+let b = 18, d = 2;
+                        //1
 if (Number.isInteger(b/d)) {
     console.log("1. B é divisível por " + d);
     b = b/ d;
