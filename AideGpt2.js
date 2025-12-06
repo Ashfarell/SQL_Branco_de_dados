@@ -1,3 +1,5 @@
+                    //Exercício 6 — Soma Condicional em Intervalo
+
 function somarNoIntervalo(a,b){
     if (a>=b) {
         console.log("A não pode ser maior do que B")            //A n/ pode ser < B
