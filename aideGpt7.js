@@ -1,3 +1,4 @@
+//Exercício 7 (do programa de estudos)
 function parOuImpar(a){
       let msg = a + " é "
 if (a%2===0) {
