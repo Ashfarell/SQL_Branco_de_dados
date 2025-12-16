@@ -3,14 +3,15 @@
 let numeros = [1,2,3,4,5];
 for (let i = 0; i< numeros.length; i++) {                     //FOR: percorre índices do array
     let n = numeros[i];
-    console.log(numeros[n])
+    //console.log(numeros[n])                           //NÃO imprime 1
+    console.log(n);
 }
-
         //ARRAY com FOR
 let frutas = ["maçã", "banana", "uva"];
 for (let i = 0; i < frutas.length; i++) {                     //FOR: percorre índices do array
     let fruta = frutas[i];
     console.log(fruta)
+    //console.log(frutas[fruta])                           //NÃO imprime maçã
 }
 
         //ARRAY com OF
