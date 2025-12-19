@@ -55,12 +55,14 @@ function classificarNumeros(lista) {
     let frases = [];
     let possiveisDivisores = [3, 5];
 
+                // LOOP 1 → percorre os números
     for (let n of lista) {
         let msg = n + " é ";
         msg += (n % 2 === 0) ? "par" : "ímpar";
 
         let divisores = [];
 
+                
         for (let d of possiveisDivisores) {
             if (n % d === 0) {
                 divisores.push(d);
@@ -72,3 +74,4 @@ function classificarNumeros(lista) {
         frases.push(msg);
     }
     return frases;
+}
